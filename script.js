@@ -32,6 +32,16 @@ function makeLinkRow(iconKey, href, label) {
   return a;
 }
 
+function makeInstagramRows(instagram) {
+  const entries = Array.isArray(instagram) ? instagram : [{ label: null, handle: instagram }];
+  return entries
+    .filter((entry) => entry && entry.handle)
+    .map((entry) => {
+      const display = entry.label ? `${entry.label} — ${entry.handle}` : entry.handle;
+      return makeLinkRow("instagram", normalizeInstagramUrl(entry.handle), display);
+    });
+}
+
 function renderCard(person) {
   const card = document.createElement("article");
   card.className = "card";
@@ -58,9 +68,7 @@ function renderCard(person) {
   links.className = "card-links";
 
   if (person.instagram) {
-    links.appendChild(
-      makeLinkRow("instagram", normalizeInstagramUrl(person.instagram), person.instagram)
-    );
+    makeInstagramRows(person.instagram).forEach((row) => links.appendChild(row));
   }
   if (person.email) {
     links.appendChild(makeLinkRow("email", `mailto:${person.email}`, person.email));
