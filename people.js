@@ -11,18 +11,17 @@
 
 const PEOPLE = [
   {
-    name: "TBD — Person 1",
+    name: "Ilandré Viljoen",
     role: "Poster Artist",
-    instagram: "@handle",
-    email: "name@example.com",
-    portfolio: "https://example.com",
+    instagram: "main: @mlady_illie",
+    instagram: "art: @karnallie_",
   },
   {
-    name: "TBD — Person 2",
-    role: "Poster Artist",
-    instagram: "@handle",
-    portfolio: "https://example.com",
+    name: "Mia de Beer",
+    role: "Web Dev & Concept Artist",
+    email: "pienkdrakie@gmail.com",
   },
+  /*
   {
     name: "TBD — Person 3",
     role: "Event Organizer",
@@ -43,4 +42,5 @@ const PEOPLE = [
     instagram: "@handle",
     email: "name@example.com",
   },
+  */
 ];
