@@ -15,7 +15,7 @@
 const PEOPLE = [
   {
     name: "Ilandré Viljoen",
-    role: "Poster Artist",
+    role: "Artist",
     instagram: [
       { label: "Main", handle: "@mlady_illie" },
       { label: "Art", handle: "@karnallie_" },
@@ -23,16 +23,18 @@ const PEOPLE = [
   },
   {
     name: "Mia de Beer",
-    role: "Web Dev & Concept Artist",
+    role: "Web Dev & Artist",
     email: "pienkdrakie@gmail.com",
     portfolio: "https://github.com/PienkDrakie",
   },
-  /*
   {
-    name: "TBD — Person 3",
-    role: "Event Organizer",
-    email: "name@example.com",
+    name: "Lisa Visagie",
+    role: "Artist",
+    instagram: [
+      { label: "Art", handle: "@fish.pdf" },
+      ],
   },
+  /*
   {
     name: "TBD — Person 4",
     role: "Sponsorship & Logistics",
